@@ -1,0 +1,256 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+body {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.danke_shane figure img {
+    position: relative;
+    height: 400;
+    width: 360px;
+    margin: 0 auto 0 auto;
+    margin-top: 30%;
+    opacity: 0.9;
+    border: 2px solid black;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.danke_shane figure:hover img {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+	overflow: hidden;
+}
+
+#scloud {
+    position: absolute;
+    margin: auto;
+    top: calc(95% - 22px);
+    left: 0;
+    right: 0;
+    width: 150px;
+    height: 44px;
+    background: #8CC783;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    z-index: 100;
+}
+
+#scloud:hover{
+    background-color: #A51807;
+    transition:.5s;
+}
+
+#email {
+    position: absolute;
+    margin: auto;
+    top: calc(95% - 22px);
+    margin-left: 10%;
+    width: 150px;
+    height: 44px;
+    background: #DD7E10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    z-index: 100;
+}
+
+#email:hover{
+    background-color: #A51807;
+    transition:.5s;
+}
+
+
+#fbook {
+    position: absolute;
+    margin: auto;
+    top: calc(95% - 22px);
+    right: 0;
+    margin-right: 10%;
+    width: 150px;
+    height: 44px;
+    background: #44ACD1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    z-index: 100;
+}
+
+#fbook:hover{
+    background-color: #A51807;
+    transition:.5s;
+}
+
+.logo{
+    position: relative;
+    height: 400px;
+    width: 800px;
+    margin: 0 auto 0 auto;
+    margin-bottom: -350px;
+}
+
+.logo #lines {
+    height: 100%;
+    width: 100%;
+    background: url(shapes/lines.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+@import "http://webfonts.ru/import/notcourier.css";
+
+.lower{
+  width:340px;
+  margin:10% auto;
+  padding:50px;
+  background:white;
+  opacity:0.8;
+  color:black;
+  box-shadow:inset 0 0 0 1px black;
+  border:30px solid white;
+}
+
+.lower:hover{
+  background:black;
+  color:white;
+  box-shadow:inset 0 0 0 1px white;
+  border:30px solid black;
+}
+
+input{
+  display:none;
+}
+
+.lower label{
+  font-family: 'NotCourierSans';
+  text-transform:uppercase;
+  font-size:40px;
+  text-align:center;
+}
+
+.lower label:hover{
+  cursor:pointer;
+}
+
+.overlay{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.9);
+}
+
+.overlay label{
+	width: 58px;
+	height:58px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: url('http://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png');
+	z-index: 100;
+    cursor:pointer;
+}
+
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	height: 60%;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-weight: 300;
+	display: block;
+	color: white;
+  text-decoration:none;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+  font-family: 'NotCourierSans';
+  text-transform:uppercase;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #849368;
+}
+
+.lower~.overlay-hugeinc{
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+#op:checked~.overlay-hugeinc{
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-moz-perspective: 300px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+#op:checked~.overlay-hugeinc nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+#op:not(:checked)~.overlay-hugeinc nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
